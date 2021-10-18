@@ -2758,6 +2758,8 @@ MonoBehaviour:
   value: 0
   KoreanWon: {fileID: 437191209}
   TaiwanDollars: {fileID: 1424139761}
+  ToggleMalaysianRM: {fileID: 1839942089}
+  ToggleEuropeanEUR: {fileID: 784683363}
 --- !u!4 &1737050318
 Transform:
   m_ObjectHideFlags: 0
