@@ -1,3 +1,5 @@
 # Lab06
 
-Add Scripts
+Add Scripts.
+
+Scripts added.
