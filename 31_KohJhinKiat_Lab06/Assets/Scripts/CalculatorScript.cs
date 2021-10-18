@@ -11,6 +11,8 @@ public class CalculatorScript : MonoBehaviour
     public float value;
     public Toggle KoreanWon;
     public Toggle TaiwanDollars;
+    public Toggle ToggleMalaysianRM;
+    public Toggle ToggleEuropeanEUR;
 
     // Start is called before the first frame update
     void Start()
@@ -31,14 +33,21 @@ public class CalculatorScript : MonoBehaviour
             value = float.Parse(InputAmount.text) * 878.29f;
             InputValue.text = "$" + value;
         }
-
-        if (TaiwanDollars.isOn)
+        else if (TaiwanDollars.isOn)
         {
             value = float.Parse(InputAmount.text) * 20.74f;
             InputValue.text = "$" + value;
         }
-
-
+        else if (ToggleMalaysianRM.isOn)
+        {
+            value = float.Parse(InputAmount.text) * 3.08f;
+            InputValue.text = "$" + value;
+        }
+        else if (ToggleEuropeanEUR.isOn)
+        {
+            value = float.Parse(InputAmount.text) * 0.64f;
+            InputValue.text = "$" + value;
+        }
     }
 
     public void clear()
